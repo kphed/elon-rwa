@@ -8,8 +8,8 @@ contract ElonRWA is ERC20, ERC20Permit {
     string public constant NAME = "ElonRWA";
     string public constant SYMBOL = "ElonRWA";
 
-    // 100 billion.
-    uint256 public constant TOTAL_SUPPLY = 100e9;
+    // 100 billion tokens (token has 18 decimals).
+    uint256 public constant TOTAL_SUPPLY = 100e27;
 
     constructor() ERC20(NAME, SYMBOL) ERC20Permit(NAME) {
         _mint(msg.sender, TOTAL_SUPPLY);

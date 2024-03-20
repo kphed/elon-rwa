@@ -7,7 +7,7 @@ import {ElonRWA} from "src/ElonRWA.sol";
 contract ElonRWATest is Test {
     string public constant NAME = "ElonRWA";
     string public constant SYMBOL = "ElonRWA";
-    uint256 public constant TOTAL_SUPPLY = 100e9;
+    uint256 public constant TOTAL_SUPPLY = 100e27;
 
     function testConstructor() external {
         ElonRWA elonRWA = new ElonRWA();
